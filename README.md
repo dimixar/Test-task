@@ -2,9 +2,10 @@
 
 Create a mobile app for Android in Unity using reference and short description below. 
 Description: App simulates ball jumping at different planets, such as
--Earth (9.8m/s²,  sky color - light blue)
--Moon (1.6m/s² , sky color - gray)
--Jupiter (24.5m/s², sky color - orange)
+* Earth (9.8m/s²,  sky color - light blue)
+* Moon (1.6m/s² , sky color - gray)
+* Jupiter (24.5m/s², sky color - orange)
+
 
 If the screen is touched, ball should lean towards touch position. Jump count should be counted, shown in menu and stored between game sessions. Planets can be changed using menu. Each planet contains platforms, that after been tapped or touched by the ball - changes color. Navigation between game states should be done by "back" key.
 
