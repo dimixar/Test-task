@@ -8,6 +8,8 @@ Description: App simulates ball jumping at different planets, such as
 
 If the screen is touched, ball should lean towards touch position. Jump count should be counted, shown in menu and stored between game sessions. Planets can be changed using menu. Each planet contains platforms, that after been tapped or touched by the ball - changes color. Navigation between game states should be done by "back" key.
 
+# Reference
+  [AndroidBuild](https://github.com/Tokatak/Test-task/raw/master/Builds/DevChallenge.apk)
 
 
 # Hints
@@ -44,3 +46,5 @@ Use:
 
     Include full source code (Unity project)
     Include a brief decription of your decisions and challenges in project, as well as possible improvements.
+    Or just use git repository and share the lnik
+    
