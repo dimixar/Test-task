@@ -29,6 +29,7 @@ namespace BallTest.UI {
         void Awake() {
             _button = GetComponent<Button>();
             Assert.IsNotNull(_button, "[PlanetSelector] Cannot get Button component!!!");
+            _button.onClick.AddListener(() => { LoadPlanet(); });
         }
         #endregion
     }
