@@ -461,8 +461,13 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudServicesEnabled:
+    Build: 1
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
+    UNet: 1
+  cloudProjectId: fed0ccb2-3025-4d41-ac79-0e055162cfce
+  projectName: Ball-Test (1)
+  organizationId: drdrimixar
   cloudEnabled: 0
