@@ -19,6 +19,10 @@ namespace BallTest.Gameplay {
         public void SetGravity(float gravity) {
             _rigidBody.gravityScale = gravity * -1;
         }
+
+        public void SetAcceleration(float accel) {
+            _acceleration = accel;
+        }
         #endregion
 
         #region Monobehaviour methods
@@ -33,7 +37,7 @@ namespace BallTest.Gameplay {
             Vector2 force = Vector2.zero;
             force.y = _acceleration * _rigidBody.mass;
 
-            _rigidBody.AddRelativeForce(force);
+            _rigidBody.AddForce(force);
         }
         #endregion
     }
