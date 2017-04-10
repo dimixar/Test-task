@@ -9,11 +9,24 @@ namespace BallTest.Model {
         #endregion
 
         #region Public properties and methods
-        public PlanetData GetPlanetDataByName(string name) {
+        public int Length {
+            get {
+                return _data.Length;
+            }
+        }
+
+        public PlanetData GetByName(string name) {
             PlanetData data = System.Array.Find(_data, (x) => x.name == name);
             if (data == null)
                 Debug.LogError("[PlanetDataContainer] Couldn't find any planet with name: " + name);
             return data;
+        }
+
+        public PlanetData GetByIndex(int index) {
+            if (index < 0 || index >= _data.Length)
+                return null;
+
+            return _data[index];
         }
         #endregion
 
