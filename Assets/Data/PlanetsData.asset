@@ -13,11 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
   - name: Earth
-    skyColor: {r: 0, g: 0.751724, b: 1, a: 0}
+    skyColor: {r: 0, g: 0.5859026, b: 0.7794118, a: 1}
     gravity: 9.8
   - name: Moon
-    skyColor: {r: 0.6020761, g: 0.62257785, b: 0.6397059, a: 0}
+    skyColor: {r: 0.6020761, g: 0.62257785, b: 0.6397059, a: 1}
     gravity: 1.6
   - name: Jupiter
-    skyColor: {r: 0.9044118, g: 0.5052233, b: 0, a: 0}
+    skyColor: {r: 0.9044118, g: 0.5052233, b: 0, a: 1}
     gravity: 24.5
