@@ -6,6 +6,9 @@ namespace BallTest.Gameplay
     public class GameInstance : MonoBehaviour {
         #region Serialized fields
         [SerializeField]
+        private BallController _ballController;
+
+        [SerializeField]
         private Model.PlanetDataContainer _container;
         #endregion
 
@@ -17,11 +20,16 @@ namespace BallTest.Gameplay
         #region Monobehaviour methods
         void Awake() {
             Assert.IsNotNull(_container);
+            Assert.IsNotNull(_ballController);
 
             _jumps = PlayerPrefs.GetInt(Constants.PlayerPrefsKeys.nrOfJumps, 0);
             _planetName = PlayerPrefs.GetString(Constants.PlayerPrefsKeys.planetName, "Earth");
             Model.PlanetDataContainer.PlanetData data = _container.GetByName(_planetName);
             Camera.main.backgroundColor = data.skyColor;
+
+            _ballController.OnBallHit += OnBallHit_handler;
+            _ballController.SetGravity(data.gravity);
+            _ballController.SetAcceleration(data.accel);
         }
 
         void Update() {
