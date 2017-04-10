@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace BallTest.Model {
     [CreateAssetMenu(fileName = "new-PlanetsData", menuName = "BallTest/PlanetsData")]
