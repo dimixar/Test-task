@@ -1,16 +1,36 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Assertions;
 
-public class GameInstance : MonoBehaviour {
+namespace BallTest.Gameplay
+{
+    public class GameInstance : MonoBehaviour {
+        #region Serialized fields
+        [SerializeField]
+        private Model.PlanetDataContainer _container;
+        #endregion
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        #region Private fields
+        private int _jumps;
+        private string _planetName;
+        #endregion
+
+        #region Monobehaviour methods
+        void Awake() {
+            Assert.IsNotNull(_container);
+
+            _jumps = PlayerPrefs.GetInt(Constants.PlayerPrefsKeys.nrOfJumps, 0);
+            _planetName = PlayerPrefs.GetString(Constants.PlayerPrefsKeys.planetName, "Earth");
+            Model.PlanetDataContainer.PlanetData data = _container.GetByName(_planetName);
+            Camera.main.backgroundColor = data.skyColor;
+        }
+
+        void Update() {
+            if (Input.GetKeyDown(KeyCode.Escape)) {
+                PlayerPrefs.SetInt(Constants.PlayerPrefsKeys.nrOfJumps, _jumps);
+                PlayerPrefs.Save();
+                UnityEngine.SceneManagement.SceneManager.LoadScene(Constants.Scenes.menu);
+            }
+        }
+        #endregion
+    }
 }
