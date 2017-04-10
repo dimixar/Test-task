@@ -18,9 +18,9 @@ namespace BallTest {
 
         [System.Serializable]
         public class PlanetData {
-            string name;
-            Color skyColor;
-            float gravity;
+            public string name;
+            public Color skyColor;
+            public float gravity;
         }
     }
 }
