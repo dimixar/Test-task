@@ -29,7 +29,7 @@ namespace BallTest.UI {
             Assert.IsNotNull(_container);
 
             int jumps = PlayerPrefs.GetInt(Constants.PlayerPrefsKeys.nrOfJumps, 0);
-            _jumpsText.text = "Jumps: " + jumps;
+            _jumpsText.text = "Ball hits: " + jumps;
 
             for (int i = 0; i < _container.Length; i++) {
                 GameObject inst = GameObject.Instantiate(_buttonPrefab, _buttonsGroupTransform);
