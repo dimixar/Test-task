@@ -19,6 +19,7 @@ namespace BallTest.UI {
         #region private methods
         private void LoadPlanet() {
             PlayerPrefs.SetString(Constants.PlayerPrefsKeys.planetName, _name);
+            PlayerPrefs.Save();
             UnityEngine.SceneManagement.SceneManager.LoadScene(Constants.Scenes.gameplay);
         }
         #endregion
