@@ -40,5 +40,11 @@ namespace BallTest.Gameplay
             }
         }
         #endregion
+
+        #region BallController event handlers
+        private void OnBallHit_handler() {
+            _jumps += 1;
+        }
+        #endregion
     }
 }
