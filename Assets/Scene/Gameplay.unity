@@ -673,6 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80fa77fc387e54d52a9e72a2943b38e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ballController: {fileID: 123727810}
   _container: {fileID: 11400000, guid: 4c5527270aad9413391d0f24c147e0d8, type: 2}
 --- !u!1 &1406217270
 GameObject:
