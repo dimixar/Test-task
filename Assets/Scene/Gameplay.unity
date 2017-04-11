@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 38339932}
   - component: {fileID: 38339933}
   - component: {fileID: 38339934}
+  - component: {fileID: 38339935}
   m_Layer: 0
   m_Name: Ledge-2
   m_TagString: Untagged
@@ -170,7 +171,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 12ef7cbdfe0e143fa858a324456c8979, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d90a8faf6fb9540b084ef2825cc3a5dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -194,7 +195,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
-    oldSize: {x: 1.25, y: 1.25}
+    oldSize: {x: 2.5, y: 0.625}
     newSize: {x: 1.0722326, y: 0.7087921}
     adaptiveTilingThreshold: 0
     drawMode: 2
@@ -203,6 +204,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 12}
   m_EdgeRadius: 0
+--- !u!114 &38339935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 38339931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9fdcebf7d194413b74a31f3d5946ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &82206371
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +439,7 @@ GameObject:
   - component: {fileID: 593857219}
   - component: {fileID: 593857220}
   - component: {fileID: 593857221}
+  - component: {fileID: 593857222}
   m_Layer: 0
   m_Name: Ledge-1
   m_TagString: Untagged
@@ -479,7 +492,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 12ef7cbdfe0e143fa858a324456c8979, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d90a8faf6fb9540b084ef2825cc3a5dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -503,7 +516,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
-    oldSize: {x: 1.25, y: 1.25}
+    oldSize: {x: 2.5, y: 0.625}
     newSize: {x: 1.0722326, y: 0.7087921}
     adaptiveTilingThreshold: 0
     drawMode: 2
@@ -512,6 +525,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 12}
   m_EdgeRadius: 0
+--- !u!114 &593857222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593857218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9fdcebf7d194413b74a31f3d5946ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &804899141
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +902,7 @@ GameObject:
   - component: {fileID: 1406217271}
   - component: {fileID: 1406217272}
   - component: {fileID: 1406217273}
+  - component: {fileID: 1406217274}
   m_Layer: 0
   m_Name: Ledge-3
   m_TagString: Untagged
@@ -930,7 +955,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 12ef7cbdfe0e143fa858a324456c8979, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d90a8faf6fb9540b084ef2825cc3a5dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -954,7 +979,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
-    oldSize: {x: 1.25, y: 1.25}
+    oldSize: {x: 2.5, y: 0.625}
     newSize: {x: 1.5486842, y: 0.7087921}
     adaptiveTilingThreshold: 0
     drawMode: 2
@@ -963,6 +988,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.56, y: 0.76}
   m_EdgeRadius: 0
+--- !u!114 &1406217274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1406217270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9fdcebf7d194413b74a31f3d5946ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1838852365
 GameObject:
   m_ObjectHideFlags: 0
