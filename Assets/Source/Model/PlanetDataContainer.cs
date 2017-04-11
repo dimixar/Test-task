@@ -35,7 +35,6 @@ namespace BallTest.Model {
             public string name;
             public Color skyColor;
             public float gravity;
-            public float accel;
         }
     }
 }

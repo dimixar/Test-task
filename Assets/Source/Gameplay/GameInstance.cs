@@ -29,7 +29,6 @@ namespace BallTest.Gameplay
 
             _ballController.OnBallHit += OnBallHit_handler;
             _ballController.SetGravity(data.gravity);
-            _ballController.SetAcceleration(data.accel);
         }
 
         void Update() {
