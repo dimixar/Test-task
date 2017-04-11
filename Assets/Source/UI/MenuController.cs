@@ -39,6 +39,12 @@ namespace BallTest.UI {
                 inst.name = planetName + "-button";
             }
         }
+
+        void Update() {
+            if (Input.GetKeyDown(KeyCode.Escape)) {
+                Application.Quit();
+            }
+        }
         #endregion
     }
 }
